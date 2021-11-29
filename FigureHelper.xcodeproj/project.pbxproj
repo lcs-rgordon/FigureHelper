@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		81C93A54275516F500A83D5D /* FigureHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C93A53275516F500A83D5D /* FigureHelperApp.swift */; };
-		81C93A56275516F500A83D5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C93A55275516F500A83D5D /* ContentView.swift */; };
 		81C93A58275516F600A83D5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C93A57275516F600A83D5D /* Assets.xcassets */; };
 		81C93A5B275516F600A83D5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C93A5A275516F600A83D5D /* Preview Assets.xcassets */; };
+		81C93A652755172600A83D5D /* FiguresListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C93A642755172600A83D5D /* FiguresListView.swift */; };
+		81C93A672755173C00A83D5D /* AnyFigure2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C93A662755173C00A83D5D /* AnyFigure2D.swift */; };
+		81C93A6927551A2100A83D5D /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C93A6827551A2100A83D5D /* Rectangle.swift */; };
+		81C93A6B27551A2A00A83D5D /* Parallelogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C93A6A27551A2A00A83D5D /* Parallelogram.swift */; };
+		81C93A6D27551B2600A83D5D /* g9-formula-sheet-academic.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 81C93A6C27551B2600A83D5D /* g9-formula-sheet-academic.pdf */; };
+		81C93A6F27551C5300A83D5D /* RectangleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C93A6E27551C5300A83D5D /* RectangleDetailView.swift */; };
+		81C93A7127551C5D00A83D5D /* ParallelogramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C93A7027551C5D00A83D5D /* ParallelogramDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81C93A50275516F500A83D5D /* FigureHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FigureHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C93A53275516F500A83D5D /* FigureHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureHelperApp.swift; sourceTree = "<group>"; };
-		81C93A55275516F500A83D5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81C93A57275516F600A83D5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C93A5A275516F600A83D5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81C93A642755172600A83D5D /* FiguresListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiguresListView.swift; sourceTree = "<group>"; };
+		81C93A662755173C00A83D5D /* AnyFigure2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyFigure2D.swift; sourceTree = "<group>"; };
+		81C93A6827551A2100A83D5D /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		81C93A6A27551A2A00A83D5D /* Parallelogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parallelogram.swift; sourceTree = "<group>"; };
+		81C93A6C27551B2600A83D5D /* g9-formula-sheet-academic.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "g9-formula-sheet-academic.pdf"; sourceTree = "<group>"; };
+		81C93A6E27551C5300A83D5D /* RectangleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetailView.swift; sourceTree = "<group>"; };
+		81C93A7027551C5D00A83D5D /* ParallelogramDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelogramDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				81C93A53275516F500A83D5D /* FigureHelperApp.swift */,
-				81C93A55275516F500A83D5D /* ContentView.swift */,
+				81C93A61275516FF00A83D5D /* Model */,
+				81C93A622755170600A83D5D /* Views */,
 				81C93A57275516F600A83D5D /* Assets.xcassets */,
+				81C93A6C27551B2600A83D5D /* g9-formula-sheet-academic.pdf */,
 				81C93A59275516F600A83D5D /* Preview Content */,
 			);
 			path = FigureHelper;
@@ -65,6 +79,26 @@
 				81C93A5A275516F600A83D5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81C93A61275516FF00A83D5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81C93A662755173C00A83D5D /* AnyFigure2D.swift */,
+				81C93A6827551A2100A83D5D /* Rectangle.swift */,
+				81C93A6A27551A2A00A83D5D /* Parallelogram.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81C93A622755170600A83D5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81C93A642755172600A83D5D /* FiguresListView.swift */,
+				81C93A6E27551C5300A83D5D /* RectangleDetailView.swift */,
+				81C93A7027551C5D00A83D5D /* ParallelogramDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +161,7 @@
 			files = (
 				81C93A5B275516F600A83D5D /* Preview Assets.xcassets in Resources */,
 				81C93A58275516F600A83D5D /* Assets.xcassets in Resources */,
+				81C93A6D27551B2600A83D5D /* g9-formula-sheet-academic.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81C93A56275516F500A83D5D /* ContentView.swift in Sources */,
+				81C93A652755172600A83D5D /* FiguresListView.swift in Sources */,
 				81C93A54275516F500A83D5D /* FigureHelperApp.swift in Sources */,
+				81C93A6B27551A2A00A83D5D /* Parallelogram.swift in Sources */,
+				81C93A6F27551C5300A83D5D /* RectangleDetailView.swift in Sources */,
+				81C93A672755173C00A83D5D /* AnyFigure2D.swift in Sources */,
+				81C93A6927551A2100A83D5D /* Rectangle.swift in Sources */,
+				81C93A7127551C5D00A83D5D /* ParallelogramDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

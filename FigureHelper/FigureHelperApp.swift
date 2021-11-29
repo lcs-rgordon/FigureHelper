@@ -11,7 +11,9 @@ import SwiftUI
 struct FigureHelperApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                FiguresListView()
+            }
         }
     }
 }
